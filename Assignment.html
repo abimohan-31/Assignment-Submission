@@ -1,125 +1,188 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS task</title>
-</head>
+  </head>
 
-<style>
-    
+  <style>
     body {
-        font-family:Arial, Helvetica, sans-serif;
-        background-color: rgb(224, 208, 198);
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: rgb(224, 208, 198);
     }
 
-    div{
-        background-color: white;
-        border-radius: 10px;      
-        padding: 6px 20px ;
-        width: 400px;
-        margin: auto;
-        border: 1px solid orange;
-        
+    div {
+      background-color: white;
+      border-radius: 10px;
+      padding: 6px 20px;
+      width: 400px;
+      margin: auto;
+      border: 1px solid orange;
     }
 
-    input[type=text],input[type=email], [type=tel], select {
-        width: 100%;
-        padding: 12px 20px;
-        margin: 8px 0;
-        display: inline-block;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        box-sizing: border-box;
+    input[type="text"],
+    input[type="email"],
+    [type="tel"],
+    select {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
     }
 
-    input[type=submit] {
-        width: 100%;
-        background-color: #fc7a08;
-        color: white;
-        padding: 14px 20px;
-        margin: 8px 0;
-        border: none;
-        border-radius: 80px;
-        cursor: pointer;
-    }
-    
-    h2{
-        text-align: center;
+    input[type="submit"] {
+      width: 90%;
+      background-color: #fc7a08;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 80px;
+      cursor: pointer;
     }
 
-    iframe{
-        display: none;
-
+    h2 {
+      text-align: center;
     }
 
-</style>
+    iframe {
+      display: none;
+    }
+  </style>
 
-<body>
+  <body>
     <div>
-        <form action="">
-            <h2>Assignment Submission</h2>
+      <form action="">
+        <h2>Assignment Submission</h2>
 
-            <label for="fname">Full Name:</label>
-            <br>
-            <input type="text" name="fname" id="fname" placeholder="E.g. John Doe" required>
-            <br>
+        <label for="fname">Full Name:</label>
+        <br />
+        <input
+          type="text"
+          name="fname"
+          id="fname"
+          placeholder="E.g. John Doe"
+          required
+        />
+        <br />
 
-            <label for="email">Email Address:</label>
-            <br>
-            <input type="email" name="email" id="email" placeholder="E.g. john@example.com" required>
-            <br>
+        <label for="email">Email Address:</label>
+        <br />
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="E.g. john@example.com"
+          required
+        />
+        <br />
 
-            <label for="Phone">Phone Number:</label>
-            <br>
-            <input type="tel" name="phone" id="phone" placeholder="E.g. +94 77 097 0989" pattern="[0-9]{10}" required>
-            <br>
+        <label for="Phone">Phone Number:</label>
+        <br />
+        <input
+          type="tel"
+          name="phone"
+          id="phone"
+          placeholder="E.g. +94 77 097 0989"
+          pattern="[0-9]{10}"
+          required
+        />
+        <br />
 
-            <p>Gender</p>
-            <input type="radio" name="gender" id="male" value="male">
-            <label for="gender">Male</label>
-            <input type="radio" name="gender" id="female" value="female">
-            <label for="gender">Female</label>
-            <input type="radio" name="gender" id="other" value="other">
-            <label for="gender">Other</label>
-            <br>
-            <br>
+        <p>Gender</p>
+        <input type="radio" name="gender" id="male" value="male" />
+        <label for="gender">Male</label>
+        <input type="radio" name="gender" id="female" value="female" />
+        <label for="gender">Female</label>
+        <input type="radio" name="gender" id="other" value="other" />
+        <label for="gender">Other</label>
+        <br />
+        <br />
 
-            <label for="course">Select Course:</label>
-            <select name="course" id="course">
-                <option value="- Choose -">- Choose -</option>
-                <option value="WebDevelopment">Full Stack Development</option>
-                <option value="Cybersecurity">Cyber Security</option>
-            </select>
-            
-            <p>Upload Assignment:</p>
-       
-            <input type="file" id="myFile" name="filename">
-           
-            <p>Comments / Notes:</p>
-            
-            <textarea name="comments" id="comments" cols="47" rows="04"
-                placeholder=" Write something if needed..."></textarea>
-            <br>
-            <br>
+        <label for="course">Select Course:</label>
+        <select name="course" id="course">
+          <option value="- Choose -">- Choose -</option>
+          <option value="WebDevelopment">Full Stack Development</option>
+          <option value="Cybersecurity">Cyber Security</option>
+        </select>
 
-            <input type="checkbox" name="terms-and-conditions" id="terms-and-conditions">
-            <label for="terms-and-conditions">I agree to the submission terms</label>
-            <br>
-            <br>
+        <p>Upload Assignment:</p>
 
-            <!-- <audio controls autoplay>
+        <input type="file" id="myFile" name="filename" />
+
+        <p>Comments / Notes:</p>
+
+        <textarea
+          name="comments"
+          id="comments"
+          cols="47"
+          rows="04"
+          placeholder=" Write something if needed..."
+        ></textarea>
+        <br />
+        <br />
+
+        <input
+          type="checkbox"
+          name="terms-and-conditions"
+          id="terms-and-conditions"
+        />
+        <label for="terms-and-conditions"
+          >I agree to the submission terms</label
+        >
+        <br />
+        <br />
+
+        <!-- <audio controls autoplay>
 <source src="https://www.w3schools.com/html/mov_bbb.mp4"></audio> -->
 
-<iframe style="visibility: none;" width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1397264998&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/unwav" title="Unwav" target="_blank" style="color: #cccccc; text-decoration: none;">Unwav</a> · <a href="https://soundcloud.com/unwav/edm-midi-pack-vol2" title="EDM MIDI Pack Vol.2 - Premium 500+ Royalty-Free MIDI Files | Unwav" target="_blank" style="color: #cccccc; text-decoration: none;">EDM MIDI Pack Vol.2 - Premium 500+ Royalty-Free MIDI Files | Unwav</a></div>
+        <iframe
+          style="visibility: none"
+          width="100%"
+          height="300"
+          scrolling="no"
+          frameborder="no"
+          allow="autoplay"
+          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1397264998&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+        ></iframe>
+        <div
+          style="
+            font-size: 10px;
+            color: #cccccc;
+            line-break: anywhere;
+            word-break: normal;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            font-family: Interstate, Lucida Grande, Lucida Sans Unicode,
+              Lucida Sans, Garuda, Verdana, Tahoma, sans-serif;
+            font-weight: 100;
+          "
+        >
+          <a
+            href="https://soundcloud.com/unwav"
+            title="Unwav"
+            target="_blank"
+            style="color: #cccccc; text-decoration: none"
+            >Unwav</a
+          >
+          ·
+          <a
+            href="https://soundcloud.com/unwav/edm-midi-pack-vol2"
+            title="EDM MIDI Pack Vol.2 - Premium 500+ Royalty-Free MIDI Files | Unwav"
+            target="_blank"
+            style="color: #cccccc; text-decoration: none"
+            >EDM MIDI Pack Vol.2 - Premium 500+ Royalty-Free MIDI Files |
+            Unwav</a
+          >
+        </div>
 
-            <input type="submit" value="Submit Assignment">
-        </form>
+        <input type="submit" value="Submit Assignment" />
+      </form>
     </div>
-</body>
-
+  </body>
 </html>
-
